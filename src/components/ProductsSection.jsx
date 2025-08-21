@@ -1,20 +1,25 @@
 import { CloudSnow, Zap } from "lucide-react"
 
+const numeroWsp = "5492214638936"
+
 const productos = [
   {
     nombre: "Bolsa de Hielo 4kg",
     descripcion: "Ideal para reuniones pequeñas y uso doméstico. Hielo cristalino y de larga duración.",
-    badge: { texto: "Práctico", color: "bg-rosa", icon: <Zap className="h-4 w-4" /> }
+    badge: { texto: "Práctico", color: "bg-rosa", icon: <Zap className="h-4 w-4" /> },
+    mensaje: "Hola! Quisiera consultar el precio de la Bolsa de Hielo 4kg."
   },
   {
     nombre: "Bolsa de Hielo 10kg",
     descripcion: "Perfecta para fiestas, bares y eventos medianos. Mantiene tus bebidas frías por más tiempo.",
-    badge: { texto: "Más Vendido", color: "bg-rosa", icon: <Zap className="h-4 w-4" /> }
+    badge: { texto: "Más Vendido", color: "bg-rosa", icon: <Zap className="h-4 w-4" /> },
+    mensaje: "Hola! Quisiera consultar el precio de la Bolsa de Hielo 10kg."
   },
   {
     nombre: "Bolsa de Hielo 15kg",
     descripcion: "La mejor opción para grandes eventos y negocios. Gran capacidad y duración.",
-    badge: { texto: "Mayor Capacidad", color: "bg-rosa", icon: <Zap className="h-4 w-4" /> }
+    badge: { texto: "Mayor Capacidad", color: "bg-rosa", icon: <Zap className="h-4 w-4" /> },
+    mensaje: "Hola! Quisiera consultar el precio de la Bolsa de Hielo 15kg."
   }
 ]
 
@@ -52,13 +57,15 @@ export default function ProductsSection() {
               <p className="text-slate-600 mb-8 text-center">
                 {prod.descripcion}
               </p>
-              <button
-                className="w-full border border-blue-200 text-blue-700 bg-white hover:bg-blue-50 rounded-md py-3 font-medium transition-all duration-300 hover:scale-105 active:scale-95 relative overflow-hidden group"
-                type="button"
+              <a
+                href={`https://wa.me/${numeroWsp}?text=${encodeURIComponent(prod.mensaje)}`}
+                className="w-full border border-blue-200 text-blue-700 bg-white hover:bg-blue-50 rounded-md py-3 font-medium justify-center flex transition-all duration-300 hover:scale-105 active:scale-95 relative overflow-hidden group"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span className="relative z-10">Solicitar Presupuesto</span>
                 <span className="absolute inset-0 bg-gradient-to-r from-blue-100 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-              </button>
+              </a>
             </div>
           ))}
         </div>

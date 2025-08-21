@@ -14,7 +14,7 @@ export default function ServicesSection() {
 
       <div className="container relative z-20">
         <div className="text-center mb-6">
-          <div className=" px-3 py-1 rounded-full bg-blue-700/30 backdrop-blur-sm border border-blue-400/30 text-blue-100 text-sm font-medium mb-4 flex items-center gap-2 justify-center">
+          <div className="px-3 py-1 rounded-full bg-blue-700/30 backdrop-blur-sm border border-blue-400/30 text-blue-100 text-sm font-medium mb-4 flex items-center gap-2 justify-center">
             <Snowflake className="h-4 w-4" />
             <span>Nuestros Servicios</span>
           </div>
@@ -41,18 +41,20 @@ export default function ServicesSection() {
               <li className="flex items-start">
                 <CheckCircle strokeWidth={3} className="h-5 w-5 mr-3 shrink-0 mt-0.5 text-rosa" />
                 <span className="text-blue-50">
-                  Suministro de hielo para bodas, fiestas y eventos corporativos con servicio de entrega refrigerado
+                  Suministro de bolsas de hielo para bodas, fiestas y eventos corporativos
                 </span>
               </li>
               <li className="flex items-start">
                 <CheckCircle strokeWidth={3} className="h-5 w-5 mr-3 shrink-0 mt-0.5 text-rosa" />
                 <span className="text-blue-50">
-                  Esculturas de hielo personalizadas talladas por artistas especializados
+                  Diferentes tamaños disponibles: 4kg, 10kg y 15kg según la necesidad del evento
                 </span>
               </li>
               <li className="flex items-start">
                 <CheckCircle strokeWidth={3} className="h-5 w-5 mr-3 shrink-0 mt-0.5 text-rosa" />
-                <span className="text-blue-50">Barras de hielo para cócteles con iluminación LED incorporada</span>
+                <span className="text-blue-50">
+                  Entrega refrigerada y puntual en el lugar del evento
+                </span>
               </li>
               <li className="flex items-start">
                 <CheckCircle strokeWidth={3} className="h-5 w-5 mr-3 shrink-0 mt-0.5 text-rosa" />

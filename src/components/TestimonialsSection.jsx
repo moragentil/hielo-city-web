@@ -31,15 +31,15 @@ export default function TestimonialSection() {
             <Star className="h-5 w-5 fill-current" />
           </div>
           <p className="mb-6 text-slate-600 relative z-10">
-            "El mejor servicio de hielo de La Plata. Siempre puntuales y con un producto de excelente calidad. El hielo dura mucho más que otros proveedores y mantiene la temperatura perfecta por horas."
+            "Te salva absolutamente todos los planes, la bolsa de 15kg es muy barata y que sea 24 hs hace que puedas comprar el hielo cuando lo necesites sin tener espacio para guardarlo"
           </p>
           <div className="flex items-center relative z-10">
             <div className="w-12 h-12 rounded-full bg-rosa flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
               <span className="font-medium text-white">MR</span>
             </div>
             <div>
-              <p className="font-medium">Martín Rodríguez</p>
-              <p className="text-sm text-slate-500">Restaurante El Dorado</p>
+              <p className="font-medium">Bruno Tomasi Posadas</p>
+              <p className="text-sm text-slate-500">Cliente Particular</p>
             </div>
           </div>
         </div>
@@ -56,14 +56,13 @@ export default function TestimonialSection() {
             <Star className="h-5 w-5 fill-current" />
           </div>
           <p className="mb-6 text-slate-600 relative z-10">
-            "Contratamos sus servicios para nuestra boda y fue perfecto. La escultura de hielo fue el centro de atención y el hielo para las bebidas duró toda la noche. ¡Brillaba como cristal!"
-          </p>
+            "Compré 2 bolsas para enfriar la bebida para 50 personas y al final de la fiesta cuando volqué los tachos todavía quedaba hielo como para otra fiesta más, muy rendidor. altamente recomendable"</p>
           <div className="flex items-center relative z-10">
             <div className="w-12 h-12 rounded-full bg-rosa flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
               <span className="font-medium text-white">LG</span>
             </div>
             <div>
-              <p className="font-medium">Laura Gómez</p>
+              <p className="font-medium">Gabriel Trueba</p>
               <p className="text-sm text-slate-500">Cliente Particular</p>
             </div>
           </div>
@@ -81,15 +80,15 @@ export default function TestimonialSection() {
             <Star className="h-5 w-5 fill-current" />
           </div>
           <p className="mb-6 text-slate-600 relative z-10">
-            "Llevamos más de 3 años trabajando con ellos para nuestro hotel. Servicio confiable, puntual y con un producto de primera calidad. Su hielo triturado es perfecto para nuestros buffets."
+            "Excelente servicio y atención !! Muchas gracias Hielo City por la seriedad y compromiso !!! Queres que tu festejo sea un éxito? Hielo City !!! Yo lo recomiendo"
           </p>
           <div className="flex items-center relative z-10">
             <div className="w-12 h-12 rounded-full bg-rosa flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
               <span className="font-medium text-white">CP</span>
             </div>
             <div>
-              <p className="font-medium">Carlos Pérez</p>
-              <p className="text-sm text-slate-500">Hotel Platinum</p>
+              <p className="font-medium">alba dietrich</p>
+              <p className="text-sm text-slate-500">Cliente Particular</p>
             </div>
           </div>
         </div>

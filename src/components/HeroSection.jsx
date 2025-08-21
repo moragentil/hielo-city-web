@@ -37,6 +37,14 @@ export default function HeroSection() {
     },
   }
 
+  // Función para scroll suave a productos
+  const handleVerProductos = () => {
+    const section = document.getElementById("productos")
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+
   return (
     <section id="inicio" className="relative mt-16 scroll-mt-20 py-16 bg-gradient-to-r from-blue-900/80 to-blue-500/60">
       <div className="container mx-auto px-6">
@@ -95,7 +103,10 @@ export default function HeroSection() {
               }}
               className="flex flex-col sm:flex-row gap-4 pt-4"
             >
-              <button
+              <a
+                href="https://wa.me/5492214638936"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex text-white items-center px-3 py-2 rounded-md font-medium bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 shadow-lg shadow-blue-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
               >
                 <span className="relative z-10 flex items-center gap-2">
@@ -104,9 +115,10 @@ export default function HeroSection() {
                 </span>
                 <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
                 <span className="absolute -inset-x-2 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-blue-200 to-transparent"></span>
-              </button>
+              </a>
               <button
-                className="flex items-center px-3 py-2 rounded-md font-medium  text-white border-white/40 backdrop-blur-sm border bg-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+                onClick={handleVerProductos}
+                className="flex items-center px-3 py-2 rounded-md font-medium text-white border-white/40 backdrop-blur-sm border bg-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <span>Ver Productos</span>

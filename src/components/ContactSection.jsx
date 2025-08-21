@@ -1,6 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
-import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Sparkles } from "lucide-react"
+import { MapPin, Phone, Mail, Clock, Facebook, Instagram } from "lucide-react"
 
 export default function ContactSection() {
   return (
@@ -58,6 +58,7 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
+
             <div className="flex gap-4 mt-8">
               <a
                 href="#"
@@ -74,86 +75,19 @@ export default function ContactSection() {
             </div>
           </div>
 
-          {/* Formulario de contacto */}
-          <motion.div
-  className="bg-white/70 backdrop-blur-lg p-8 rounded-xl shadow-xl shadow-blue-500/5 border border-blue-100/50 relative overflow-hidden group"
->
-  <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-  <div className="absolute top-0 left-0 w-20 h-20 bg-gradient-to-br from-blue-100/50 to-transparent rounded-tl-xl"></div>
-  <div className="absolute bottom-0 right-0 w-20 h-20 bg-gradient-to-tl from-blue-100/50 to-transparent rounded-br-xl"></div>
-
-  <h3 className="text-xl font-bold mb-6 bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent relative z-10 flex items-center gap-2">
-    <span>Envíanos un Mensaje</span>
-    <Mail className="h-5 w-5 text-blue-500" />
-  </h3>
-  <form className="space-y-4 relative z-10">
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <div className="space-y-2">
-        <label htmlFor="nombre" className="text-sm font-medium text-slate-700">
-          Nombre
-        </label>
-        <input
-          id="nombre"
-          placeholder="Tu nombre"
-          className="border border-blue-200 rounded-md px-3 py-2 w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-all duration-200"
-        />
-      </div>
-      <div className="space-y-2">
-        <label htmlFor="telefono" className="text-sm font-medium text-slate-700">
-          Teléfono
-        </label>
-        <input
-          id="telefono"
-          placeholder="Tu teléfono"
-          className="border border-blue-200 rounded-md px-3 py-2 w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-all duration-200"
-        />
-      </div>
-    </div>
-    <div className="space-y-2">
-      <label htmlFor="email" className="text-sm font-medium text-slate-700">
-        Email
-      </label>
-      <input
-        id="email"
-        type="email"
-        placeholder="Tu email"
-        className="border border-blue-200 rounded-md px-3 py-2 w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-all duration-200"
-      />
-    </div>
-    <div className="space-y-2">
-      <label htmlFor="asunto" className="text-sm font-medium text-slate-700">
-        Asunto
-      </label>
-      <input
-        id="asunto"
-        placeholder="Asunto del mensaje"
-        className="border border-blue-200 rounded-md px-3 py-2 w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-all duration-200"
-      />
-    </div>
-    <div className="space-y-2">
-      <label htmlFor="mensaje" className="text-sm font-medium text-slate-700">
-        Mensaje
-      </label>
-      <textarea
-        id="mensaje"
-        placeholder="Tu mensaje"
-        rows={4}
-        className="border border-blue-200 rounded-md px-3 py-2 w-full focus:border-blue-500 focus:ring-2 focus:ring-blue-500 outline-none transition-all duration-200 resize-none"
-      />
-    </div>
-    <button
-      type="submit"
-      className="w-full bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 shadow-lg shadow-blue-500/20 transition-all duration-300 hover:scale-105 active:scale-95 relative overflow-hidden group text-white font-semibold py-3 rounded-md flex items-center justify-center gap-2"
-    >
-      <span className="relative z-10 flex items-center gap-2">
-        <span>Enviar Mensaje</span>
-        <Sparkles className="h-4 w-4" />
-      </span>
-      <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
-      <span className="absolute -inset-x-2 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-blue-200 to-transparent"></span>
-    </button>
-  </form>
-</motion.div>
+          {/* Mapa en lugar del formulario */}
+          <div className="mt-8 rounded-xl overflow-hidden shadow-lg border border-blue-100/50 h-fit flex items-center justify-center">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.253622674289!2d-57.970284799999995!3d-34.92517569999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e7d02b457dbf%3A0x48bdde9a6d506637!2sHielo%20City!5e0!3m2!1ses-419!2sar!4v1755794119637!5m2!1ses-419!2sar"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Mapa Hielo City"
+            />
+          </div>
         </div>
       </div>
     </section>
