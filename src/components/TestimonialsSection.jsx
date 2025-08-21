@@ -4,7 +4,7 @@ import { Star } from "lucide-react"
 
 export default function TestimonialSection() {
   return (
-    <section id="testimonios" className="py-10 container mx-auto">
+    <section id="testimonios" className="py-10 scroll-mt-10 container mx-auto">
       <div className="text-center mb-8">
         <div className=" px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-sm font-medium mb-4 flex items-center gap-2 justify-center">
           <Star className="h-4 w-4" />

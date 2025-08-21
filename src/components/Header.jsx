@@ -4,7 +4,8 @@ import { Link } from "react-router-dom" // O usa <a> si no usas react-router
 
 export default function Header() {
   return (
-    <header className="sticky px-10 top-0 z-40 backdrop-blur-md bg-white/40 supports-[backdrop-filter]:bg-white/20 border-b border-white/20 shadow-lg shadow-blue-500/5">
+<header className="fixed w-full px-10 top-0 z-40 backdrop-blur-md bg-white border-b border-white/20 shadow-lg shadow-blue-500/5">
+
       <div className="container flex h-16 items-center justify-between py-4">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -35,7 +36,7 @@ export default function Header() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="hidden md:flex gap-6"
+          className="hidden md:flex gap-6 text-gray-900"
         >
           <a href="#inicio" className="text-sm font-medium transition-colors hover:text-blue-500 relative group">
             Inicio
@@ -64,11 +65,11 @@ export default function Header() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-4"
         >
-          <button className="font-medium flex items-center backdrop-blur-md bg-white/30 border rounded-md px-3 py-2 border-blue-200">
+          <button className="font-medium text-gray-900 flex items-center backdrop-blur-md bg-white/30 border rounded-md px-4 py-2 border-blue-200">
             <Phone className="mr-2 h-4 w-4" />
             <span>221-555-1234</span>
           </button>
-          <button className="font-medium flex items-center bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 rounded-md px-3 py-2 text-white shadow-lg shadow-blue-500/20 relative overflow-hidden group">
+          <button className="font-medium flex items-center bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 rounded-md px-4 py-2 text-white shadow-lg shadow-blue-500/20 relative overflow-hidden group">
             <span className="relative z-10">Pedir Ahora</span>
             <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             <span className="absolute -inset-x-2 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-blue-200 to-transparent"></span>
