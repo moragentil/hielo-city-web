@@ -1,5 +1,5 @@
 import { motion } from "framer-motion"
-import { Snowflake, Phone } from "lucide-react"
+import { Snowflake, Phone, MessageCircle } from "lucide-react"
 import Logo from '../../public/images/hielocity-logo.png'
 
 export default function Header() {
@@ -56,11 +56,18 @@ export default function Header() {
             <Phone className="mr-2 h-4 w-4" />
             <span>221-555-1234</span>
           </button>
-          <button className="font-medium flex items-center bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 rounded-md px-4 py-2 text-white shadow-lg shadow-blue-500/20 relative overflow-hidden group">
-            <span className="relative z-10">Pedir Ahora</span>
+          <a
+            href="https://wa.me/5492214638936"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium flex items-center bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 rounded-md px-4 py-2 text-white shadow-lg shadow-blue-500/20 relative overflow-hidden group transition-transform duration-300 hover:scale-105"
+          >
+            <span className="relative z-10 flex items-center gap-2">
+              <MessageCircle className=" h-4 w-4"/> Pedir Ahora
+            </span>
             <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
             <span className="absolute -inset-x-2 bottom-0 h-[1px] bg-gradient-to-r from-transparent via-blue-200 to-transparent"></span>
-          </button>
+          </a>
         </motion.div>
       </div>
     </header>
