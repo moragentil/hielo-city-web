@@ -2,10 +2,9 @@ import { motion, AnimatePresence } from "framer-motion"
 import { ThermometerSnowflake, Sparkles, CloudSnow } from "lucide-react"
 import { useState, useEffect } from "react"
 
-import carousel1 from '../../public/bolsas-festejo.jpg'
-import carousel2 from '../../public/copa-hielo.jpg'
-import carousel3 from '../../public/muchas-bolsas.jpg'
-import Foto from '../../public/bolsas-festejo.jpg'
+import carousel1 from '../../public/images/bolsas-festejo.jpg'
+import carousel2 from '../../public/images/copa-hielo.jpg'
+import carousel3 from '../../public/images/muchas-bolsas.jpg'
 
 const images = [carousel1, carousel2, carousel3]
 

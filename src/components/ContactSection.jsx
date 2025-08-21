@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Sparkles } from "lucid
 
 export default function ContactSection() {
   return (
-    <section id="contacto" className="py-24 relative overflow-hidden justify-center flex">
+    <section id="contacto" className="py-10 relative overflow-hidden justify-center flex">
       <div className="absolute inset-0 bg-slate-50 opacity-70 z-0"></div>
       <div className="absolute top-40 right-20 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
       <div className="absolute bottom-40 left-20 w-80 h-80 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
