@@ -1,11 +1,10 @@
 import { motion } from "framer-motion"
-import { Snowflake, Phone, CloudSnow, Sparkles } from "lucide-react"
-import { Link } from "react-router-dom" // O usa <a> si no usas react-router
+import { Snowflake, Phone } from "lucide-react"
+import Logo from '../../public/images/hielocity-logo.png'
 
 export default function Header() {
   return (
-<header className="fixed w-full px-10 top-0 z-40 backdrop-blur-md bg-white border-b border-white/20 shadow-lg shadow-blue-500/5">
-
+    <header className="fixed w-full px-10 top-0 z-40 backdrop-blur-md bg-white border-b border-white/20 shadow-lg shadow-blue-500/5">
       <div className="container flex h-16 items-center justify-between py-4">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -13,58 +12,46 @@ export default function Header() {
           transition={{ duration: 0.5 }}
           className="flex items-center gap-2"
         >
-          <div className="relative">
-            <Snowflake className="h-7 w-7 text-blue-500" />
-            <motion.div
-              animate={{
-                opacity: [0.5, 1, 0.5],
-                scale: [0.8, 1.2, 0.8],
-              }}
-              transition={{
-                duration: 2,
-                repeat: Number.POSITIVE_INFINITY,
-                ease: "easeInOut",
-              }}
-              className="absolute inset-0 bg-blue-400 rounded-full filter blur-md -z-10"
+          <a href="#inicio" className="relative group flex items-center">
+            <img
+              src={Logo}
+              alt="Logo Hielo City"
+              className="h-18 w-auto cursor-pointer transition-transform duration-300 group-hover:scale-110"
+              draggable="false"
             />
-          </div>
-          <span className="text-xl font-bold bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Hielo City
-          </span>
+            <span className="ml-3 text-rosa text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
+              Volver al inicio
+            </span>
+          </a>
         </motion.div>
-        <motion.nav
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="hidden md:flex gap-6 text-gray-900"
-        >
-          <a href="#inicio" className="text-sm font-medium transition-colors hover:text-blue-500 relative group">
-            Inicio
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="#productos" className="text-sm font-medium transition-colors hover:text-blue-500 relative group">
-            Productos
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="#servicios" className="text-sm font-medium transition-colors hover:text-blue-500 relative group">
-            Servicios
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="#testimonios" className="text-sm font-medium transition-colors hover:text-blue-500 relative group">
-            Testimonios
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-          <a href="#contacto" className="text-sm font-medium transition-colors hover:text-blue-500 relative group">
-            Contacto
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
-          </a>
-        </motion.nav>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5 }}
-          className="flex items-center gap-4"
+          className="flex items-center gap-6"
         >
+          <nav className="hidden md:flex gap-6 text-gray-900">
+            <a href="#inicio" className="font-medium transition-colors hover:text-blue-500 relative group">
+              Inicio
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#productos" className="font-medium transition-colors hover:text-blue-500 relative group">
+              Productos
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#servicios" className="font-medium transition-colors hover:text-blue-500 relative group">
+              Servicios
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#testimonios" className="font-medium transition-colors hover:text-blue-500 relative group">
+              Testimonios
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="#contacto" className="font-medium transition-colors hover:text-blue-500 relative group">
+              Contacto
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          </nav>
           <button className="font-medium text-gray-900 flex items-center backdrop-blur-md bg-white/30 border rounded-md px-4 py-2 border-blue-200">
             <Phone className="mr-2 h-4 w-4" />
             <span>221-555-1234</span>

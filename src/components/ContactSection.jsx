@@ -6,8 +6,8 @@ export default function ContactSection() {
   return (
     <section id="contacto" className="py-10 scroll-mt-10 relative overflow-hidden justify-center flex">
       <div className="absolute inset-0 bg-slate-50 opacity-70 z-0"></div>
-      <div className="absolute top-40 right-20 w-80 h-80 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
-      <div className="absolute bottom-40 left-20 w-80 h-80 bg-cyan-200 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+      <div className="absolute top-40 right-20 w-80 h-80 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
+      <div className="absolute bottom-40 left-20 w-80 h-80 bg-cyan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70"></div>
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=100&width=100')] bg-repeat opacity-5 z-0 mix-blend-overlay"></div>
 
       <div className="container relative z-10">
