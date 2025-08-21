@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@layer base {
+  :root{
+    padding: 0;
+    margin: 0;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@utility animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+@utility animation-delay-4000 {
+  animation-delay: 4s;
+}
