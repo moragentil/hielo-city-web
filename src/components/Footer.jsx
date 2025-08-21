@@ -44,10 +44,20 @@ export default function Footer() {
               hielo cristalino de larga duración.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-rosa text-white transition-colors">
+              <a
+                href="https://www.facebook.com/frabricadehielo/?locale=es_LA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-rosa text-white transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="hover:text-rosa text-white transition-colors">
+              <a
+                href="https://www.instagram.com/hielocity/?hl=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-rosa text-white transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -91,28 +101,22 @@ export default function Footer() {
             <h3 className="font-bold text-lg mb-6 text-white">Servicios</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <span className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
                   <CloudSnow className="h-4 w-4 text-blue-400" />
                   <span>Hielo para Eventos</span>
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <span className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
                   <Droplets className="h-4 w-4 text-blue-400" />
                   <span>Hielo para Negocios</span>
-                </a>
+                </span>
               </li>
               <li>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
-                  <Sparkles className="h-4 w-4 text-blue-400" />
-                  <span>Esculturas de Hielo</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <span className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
                   <Truck className="h-4 w-4 text-blue-400" />
                   <span>Entrega a Domicilio</span>
-                </a>
+                </span>
               </li>
             </ul>
           </div>

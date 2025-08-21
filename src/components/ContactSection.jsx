@@ -61,13 +61,17 @@ export default function ContactSection() {
 
             <div className="flex gap-4 mt-8">
               <a
-                href="#"
+                href="https://www.facebook.com/frabricadehielo/?locale=es_LA"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-12 w-12 rounded-full bg-gradient-to-r from-blue-600 to-blue-500 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 transform transition-transform duration-300 hover:scale-110"
               >
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="#"
+                href="https://www.instagram.com/hielocity/?hl=es"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="h-12 w-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 transform transition-transform duration-300 hover:scale-110"
               >
                 <Instagram className="h-5 w-5" />
