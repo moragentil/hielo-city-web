@@ -5,7 +5,7 @@ import { Snowflake, Sparkles, CloudSnow, CheckCircle } from "lucide-react"
 export default function ServicesSection() {
   return (
     <section id="servicios" className="py-20 relative overflow-hidden justify-center flex">
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-800 to-blue-600 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-500 z-0"></div>
       <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-blue-50 to-transparent z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-blue-50 to-transparent z-10"></div>
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=100&width=100')] bg-repeat opacity-10 z-0 mix-blend-overlay"></div>
