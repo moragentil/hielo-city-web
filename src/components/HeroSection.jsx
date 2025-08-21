@@ -62,11 +62,14 @@ export default function HeroSection() {
             </motion.div>
             <motion.h1
               variants={iceTextAnimation}
-              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.3)]"
+              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl "
             >
-              <span className="block">Hielo City</span>
-              <span className="block">La Mayor Distribuidora</span>
-              <span className="block">de Hielo en La Plata</span>
+              <div className="flex gap-4">
+                <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">Hielo </span>
+                <span className="block text-rosa">City</span> {/* Rosa para la marca */}
+              </div>
+              <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">La Mayor Distribuidora</span>
+              <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">de Hielo en La Plata</span>
             </motion.h1>
             <motion.p
               variants={{

@@ -59,7 +59,7 @@ export default function ProductsSection() {
                   style={{ maxHeight: "256px" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                <div className={`absolute top-4 right-4 ${prod.badge.color} text-white text-xs font-medium px-2 py-1 rounded-full backdrop-blur-sm z-20 flex items-center gap-1`}>
+                <div className={`absolute top-4 right-4 bg-rosa text-white text-xs font-medium px-2 py-1 rounded-full backdrop-blur-sm z-20 flex items-center gap-1`}>
                   {prod.badge.icon}
                   <span>{prod.badge.texto}</span>
                 </div>

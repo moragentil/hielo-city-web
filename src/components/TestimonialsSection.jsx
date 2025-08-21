@@ -34,7 +34,7 @@ export default function TestimonialSection() {
             "El mejor servicio de hielo de La Plata. Siempre puntuales y con un producto de excelente calidad. El hielo dura mucho más que otros proveedores y mantiene la temperatura perfecta por horas."
           </p>
           <div className="flex items-center relative z-10">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
+            <div className="w-12 h-12 rounded-full bg-rosa flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
               <span className="font-medium text-white">MR</span>
             </div>
             <div>
@@ -59,7 +59,7 @@ export default function TestimonialSection() {
             "Contratamos sus servicios para nuestra boda y fue perfecto. La escultura de hielo fue el centro de atención y el hielo para las bebidas duró toda la noche. ¡Brillaba como cristal!"
           </p>
           <div className="flex items-center relative z-10">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
+            <div className="w-12 h-12 rounded-full bg-rosa flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
               <span className="font-medium text-white">LG</span>
             </div>
             <div>
@@ -84,7 +84,7 @@ export default function TestimonialSection() {
             "Llevamos más de 3 años trabajando con ellos para nuestro hotel. Servicio confiable, puntual y con un producto de primera calidad. Su hielo triturado es perfecto para nuestros buffets."
           </p>
           <div className="flex items-center relative z-10">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
+            <div className="w-12 h-12 rounded-full bg-rosa flex items-center justify-center mr-4 shadow-lg shadow-blue-500/20">
               <span className="font-medium text-white">CP</span>
             </div>
             <div>

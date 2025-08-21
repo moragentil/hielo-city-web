@@ -31,8 +31,8 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                  <Phone className="h-5 w-5 text-blue-600" />
+                <div className="h-10 w-10 rounded-full bg-rosa/10 flex items-center justify-center mr-4">
+                  <Phone className="h-5 w-5 text-rosa" />
                 </div>
                 <div>
                   <h3 className="font-medium text-slate-900">Teléfono</h3>
@@ -49,8 +49,8 @@ export default function ContactSection() {
                 </div>
               </div>
               <div className="flex items-start">
-                <div className="h-10 w-10 rounded-full bg-blue-100 flex items-center justify-center mr-4">
-                  <Clock className="h-5 w-5 text-blue-600" />
+                <div className="h-10 w-10 rounded-full bg-rosa/10 flex items-center justify-center mr-4">
+                  <Clock className="h-5 w-5 text-rosa" />
                 </div>
                 <div>
                   <h3 className="font-medium text-slate-900">Horario de Atención</h3>

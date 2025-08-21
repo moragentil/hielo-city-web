@@ -3,7 +3,7 @@ import { Snowflake, Facebook, Instagram, CloudSnow, Droplets, Sparkles, Truck, M
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-slate-900 to-blue-900 text-white py-16 relative overflow-hidden flex justify-center">
+    <footer className="bg-gradient-to-br from-slate-900 to-blue-900 text-white py-10 relative overflow-hidden flex justify-center">
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=200&width=200')] bg-repeat opacity-5"></div>
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=50&width=50')] bg-repeat opacity-10 mix-blend-overlay"></div>
       <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-blue-300/20 to-transparent"></div>
@@ -32,8 +32,11 @@ export default function Footer() {
                   className="absolute inset-0 bg-blue-500/30 rounded-full filter blur-md -z-10"
                 />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-400 to-cyan-300 bg-clip-text text-transparent">
-                Hielo City
+              <span className="text-xl font-bold text-white">
+                Hielo 
+              </span>
+              <span className="text-xl font-bold text-rosa">
+                City
               </span>
             </motion.div>
             <p className="text-slate-400 mb-6">
@@ -41,10 +44,10 @@ export default function Footer() {
               hielo cristalino de larga duración.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="hover:text-rosa text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-slate-400 hover:text-white transition-colors">
+              <a href="#" className="hover:text-rosa text-white transition-colors">
                 <Instagram className="h-5 w-5" />
               </a>
             </div>
@@ -131,7 +134,17 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-slate-800/50 mt-12 pt-8 text-center text-slate-400 text-sm">
+        <div className="flex w-full border-t border-slate-800/50 mt-12 pt-9 text-center text-slate-400 text-sm justify-between">
+          <a href="https://www.resguarit.com.ar" target="_blank" rel="noopener noreferrer">
+            <p className="flex items-center justify-center gap-2 hover:underline">
+            <img
+              src="/images/logoresguar.svg"
+              alt="Logo Resguar IT"
+              className="h-5 w-5 inline-block mr-1"
+            />
+            Desarrollado por <span className="font-messina">Resguar IT</span>
+          </p>
+          </a>
           <p>&copy; {new Date().getFullYear()} Hielo City. Todos los derechos reservados.</p>
         </div>
       </div>
