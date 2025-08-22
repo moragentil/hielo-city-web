@@ -138,7 +138,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex w-full border-t border-slate-800/50 mt-12 pt-9 text-center text-slate-400 text-sm justify-between">
+        <div className="flex w-full border-t border-gray-300/50 mt-12 pt-9 text-center text-slate-400 text-sm justify-between">
           <a href="https://www.resguarit.com.ar" target="_blank" rel="noopener noreferrer">
             <p className="flex items-center justify-center gap-2 hover:underline">
             <img

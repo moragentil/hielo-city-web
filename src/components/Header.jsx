@@ -47,15 +47,22 @@ export default function Header() {
               Testimonios
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
+            <a href="#clientes" className="font-medium transition-colors hover:text-blue-500 relative group">
+              Clientes
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
+            </a>
             <a href="#contacto" className="font-medium transition-colors hover:text-blue-500 relative group">
               Contacto
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-cyan-400 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </nav>
-          <button className="font-medium text-gray-900 flex items-center backdrop-blur-md bg-white/30 border rounded-md px-4 py-2 border-blue-200">
+          <a
+            href="tel:2214638936"
+            className="font-medium text-gray-900 flex items-center backdrop-blur-md bg-white/30 border rounded-md px-4 py-2 border-blue-200 transition-colors hover:text-blue-700"
+          >
             <Phone className="mr-2 h-4 w-4" />
-            <span>221-555-1234</span>
-          </button>
+            <span>221-463-8936</span>
+          </a>
           <a
             href="https://wa.me/5492214638936"
             target="_blank"

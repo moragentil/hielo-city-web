@@ -27,7 +27,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-medium text-slate-900">Dirección</h3>
-                  <p className="text-slate-600">Calle 7 entre 45 y 46, La Plata, Buenos Aires</p>
+                  <p className="text-slate-600">Calle 22 Nº619 entre 44 y 45, La Plata, Buenos Aires</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -36,7 +36,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-medium text-slate-900">Teléfono</h3>
-                  <p className="text-slate-600">221-555-1234 / 221-555-5678</p>
+                  <p className="text-slate-600">221-463-8936</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -45,7 +45,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-medium text-slate-900">Email</h3>
-                  <p className="text-slate-600">info@hielocity.com.ar</p>
+                  <p className="text-slate-600">hielocity@hotmail.com</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -54,7 +54,8 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h3 className="font-medium text-slate-900">Horario de Atención</h3>
-                  <p className="text-slate-600">Lunes a Domingo: 8:00 - 22:00</p>
+                  <p className="text-slate-600">Lunes a Sábados: 8:00 - 00:00</p>
+                  <p className="text-slate-600">Domingos: Pedidos con anticipación</p>
                 </div>
               </div>
             </div>
@@ -72,7 +73,7 @@ export default function ContactSection() {
                 href="https://www.instagram.com/hielocity/?hl=es"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="h-12 w-12 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 transform transition-transform duration-300 hover:scale-110"
+                className="h-12 w-12 rounded-full bg-gradient-to-r from-pink-500 to-pink-400 flex items-center justify-center text-white shadow-lg shadow-blue-500/20 transform transition-transform duration-300 hover:scale-110"
               >
                 <Instagram className="h-5 w-5" />
               </a>

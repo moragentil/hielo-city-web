@@ -34,7 +34,7 @@ export default function ProductsSection() {
           </div>
           <h2 className="text-3xl font-bold mb-4">
             <span className="bg-gradient-to-r from-blue-700 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
-              Elige el tamaño ideal para tu necesidad
+              Elegí el tamaño ideal para tu necesidad
             </span>
           </h2>
           <p className="text-slate-600 max-w-xl mx-auto">

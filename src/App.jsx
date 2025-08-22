@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
+import BrandsCarousel from './components/BrandsCarousel'
 import FeaturesSection from './components/FeaturesSection'
 import ProductsSection from './components/ProductsSection'
 import ServicesSection from './components/ServicesSection'
@@ -24,6 +25,7 @@ function App() {
           <ProductsSection /> 
           <ServicesSection />
           <TestimonialsSection />
+                    <BrandsCarousel />
           <ContactSection /> 
         </main>
         <Footer />
