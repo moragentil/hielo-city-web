@@ -1,21 +1,21 @@
 import { motion } from "framer-motion"
-import { Snowflake, Facebook, Instagram, CloudSnow, Droplets, Sparkles, Truck, MapPin, Phone, Mail } from "lucide-react"
+import { Snowflake, Facebook, Instagram, CloudSnow, Droplets, Truck, MapPin, Phone, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-br from-slate-900 to-blue-900 text-white py-10 relative overflow-hidden flex justify-center">
+    <footer className="bg-gradient-to-br from-slate-900 to-blue-900 text-white py-8 sm:py-10 relative overflow-hidden flex justify-center">
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=200&width=200')] bg-repeat opacity-5"></div>
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=50&width=50')] bg-repeat opacity-10 mix-blend-overlay"></div>
       <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-blue-300/20 to-transparent"></div>
-      <div className="container relative z-10 px-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
-          <div>
+      <div className="container relative z-10 px-6 sm:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+          <div className="md:col-span-2 lg:col-span-1">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="flex items-center gap-2 mb-6"
+              className="flex items-center gap-2 mb-4 sm:mb-6"
             >
               <div className="relative">
                 <Snowflake className="h-6 w-6 text-blue-400" />
@@ -32,16 +32,15 @@ export default function Footer() {
                   className="absolute inset-0 bg-blue-500/30 rounded-full filter blur-md -z-10"
                 />
               </div>
-              <span className="text-xl font-bold text-white">
+              <span className="text-lg sm:text-xl font-bold text-white">
                 Hielo 
               </span>
-              <span className="text-xl font-bold text-rosa">
+              <span className="text-lg sm:text-xl font-bold text-rosa">
                 City
               </span>
             </motion.div>
-            <p className="text-slate-400 mb-6">
-              La mayor distribuidora de hielo en La Plata. Calidad y servicio garantizado desde 1995. Especialistas en
-              hielo cristalino de larga duración.
+            <p className="text-sm sm:text-base text-slate-400 mb-6">
+              La mayor distribuidora de hielo en La Plata. Calidad y servicio garantizado. Especialistas en hielo cristalino de larga duración.
             </p>
             <div className="flex gap-4">
               <a
@@ -63,8 +62,8 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Enlaces Rápidos</h3>
-            <ul className="space-y-3">
+            <h3 className="font-bold text-base sm:text-lg mb-4 sm:mb-6 text-white">Enlaces Rápidos</h3>
+            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
               <li>
                 <a href="#inicio" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="w-0 h-[1px] bg-blue-400 group-hover:w-2 transition-all duration-300"></span>
@@ -98,22 +97,22 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Servicios</h3>
-            <ul className="space-y-3">
+            <h3 className="font-bold text-base sm:text-lg mb-4 sm:mb-6 text-white">Servicios</h3>
+            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
               <li>
-                <span className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <span className="text-slate-400 flex items-center gap-2">
                   <CloudSnow className="h-4 w-4 text-blue-400" />
                   <span>Hielo para Eventos</span>
                 </span>
               </li>
               <li>
-                <span className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <span className="text-slate-400 flex items-center gap-2">
                   <Droplets className="h-4 w-4 text-blue-400" />
                   <span>Hielo para Negocios</span>
                 </span>
               </li>
               <li>
-                <span className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
+                <span className="text-slate-400 flex items-center gap-2">
                   <Truck className="h-4 w-4 text-blue-400" />
                   <span>Entrega a Domicilio</span>
                 </span>
@@ -121,8 +120,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-lg mb-6 text-white">Contacto</h3>
-            <ul className="space-y-3">
+            <h3 className="font-bold text-base sm:text-lg mb-4 sm:mb-6 text-white">Contacto</h3>
+            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-blue-400 mr-3 shrink-0 mt-0.5" />
                 <span className="text-slate-400">Calle 7 entre 45 y 46, La Plata</span>
@@ -138,7 +137,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex w-full border-t border-gray-300/50 mt-12 pt-9 text-center text-slate-400 text-sm justify-between">
+        <div className="flex flex-col sm:flex-row w-full border-t border-gray-300/50 mt-8 sm:mt-12 pt-6 sm:pt-9 text-center text-slate-400 text-xs sm:text-sm justify-between items-center gap-4 sm:gap-0">
           <a href="https://www.resguarit.com.ar" target="_blank" rel="noopener noreferrer">
             <p className="flex items-center justify-center gap-2 hover:underline">
             <img

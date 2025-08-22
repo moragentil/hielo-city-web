@@ -46,9 +46,9 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="inicio" className="relative mt-16 scroll-mt-20 py-16 bg-gradient-to-r from-blue-900/80 to-blue-500/60">
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col-reverse md:flex-row items-center justify-between gap-12">
+    <section id="inicio" className="relative mt-16 scroll-mt-20 py-6 sm:py-10 md:py-16  bg-gradient-to-r from-blue-900/80 to-blue-500/60">
+      <div className=" mx-auto px-6 md:px-16 ">
+        <div className="flex flex-col-reverse md:flex-row items-center justify-between  lg:gap-12">
           {/* Textos y botones */}
           <motion.div
             initial="hidden"
@@ -61,18 +61,18 @@ export default function HeroSection() {
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-              className="inline-block px-3 py-1 rounded-full bg-blue-500/30 backdrop-blur-sm border border-blue-400/30 text-sm font-medium mb-2"
+              className="inline-block px-3 py-1 rounded-full bg-blue-500/30 backdrop-blur-sm border border-blue-400/30 text-xs sm:text-sm font-medium mb-2"
             >
               <span className="flex items-center text-white gap-2">
                 <ThermometerSnowflake className="h-4 w-4" />
-                <span >La Mejor Calidad en La Plata</span>
+                <span className="" >La Mejor Calidad en La Plata</span>
               </span>
             </motion.div>
             <motion.h1
               variants={iceTextAnimation}
-              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl "
+              className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl "
             >
-              <div className="flex gap-4">
+              <div className="flex gap-1 md:gap-4">
                 <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">Hielo </span>
                 <span className="block text-rosa">City</span> {/* Rosa para la marca */}
               </div>
@@ -88,7 +88,7 @@ export default function HeroSection() {
                   transition: { duration: 0.7, delay: 0.4 },
                 },
               }}
-              className="text-lg md:text-xl text-blue-100"
+              className="text-base md:text-xl text-blue-100"
             >
               Suministramos hielo de la más alta calidad para eventos, negocios y hogares. Entrega rápida y servicio confiable.
             </motion.p>
@@ -101,13 +101,13 @@ export default function HeroSection() {
                   transition: { duration: 0.7, delay: 0.6 },
                 },
               }}
-              className="flex flex-col sm:flex-row gap-4 pt-4"
+              className="flex flex-col sm:flex-row gap-4 pt-2 md:pt-4"
             >
               <a
                 href="https://wa.me/5492214638936"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex text-white items-center px-3 py-2 rounded-md font-medium bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 shadow-lg shadow-blue-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+                className="flex text-white items-center px-3 py-2 rounded-md font-medium bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 shadow-lg shadow-blue-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group w-fit"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <span>Solicitar Presupuesto</span>
@@ -118,7 +118,7 @@ export default function HeroSection() {
               </a>
               <button
                 onClick={handleVerProductos}
-                className="flex items-center px-3 py-2 rounded-md font-medium text-white border-white/40 backdrop-blur-sm border bg-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
+                className="flex w-fit items-center px-3 py-2 rounded-md font-medium text-white border-white/40 backdrop-blur-sm border bg-white/30 hover:bg-white/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <span>Ver Productos</span>
@@ -129,7 +129,7 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
           {/* Imagen */}
-          <div className="flex-1 flex justify-center items-center relative w-full max-w-lg h-[28rem]">
+          <div className="flex-1 md:flex justify-center items-center relative w-full max-w-lg h-[28rem] hidden ">
             <AnimatePresence mode="wait">
               <motion.img
                 key={currentIndex}

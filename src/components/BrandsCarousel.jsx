@@ -78,8 +78,8 @@ export default function BrandsCarousel() {
   }, []);
 
   return (
-    <section id="clientes" className="w-full scroll-mt-40 py-16 flex flex-col items-center justify-center bg-gradient-to-br to-blue-400  from-blue-900/80 ">
-      <h2 className="text-3xl font-bold tracking-tight text-white mb-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+    <section id="clientes" className="w-full scroll-mt-40 py-6 sm:py-16 flex flex-col items-center justify-center bg-gradient-to-br to-blue-400  from-blue-900/80 ">
+      <h2 className="text-xl sm:text-3xl font-bold tracking-tight text-white mb-8 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
         Marcas que confían en nosotros
       </h2>
       <div className="w-full overflow-hidden relative h-52">
