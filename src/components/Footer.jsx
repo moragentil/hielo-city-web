@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="absolute inset-0 bg-[url('/placeholder.svg?height=50&width=50')] bg-repeat opacity-10 mix-blend-overlay"></div>
       <div className="absolute top-0 left-0 right-0 h-10 bg-gradient-to-b from-blue-300/20 to-transparent"></div>
       <div className="container relative z-10 px-6 sm:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
           <div className="md:col-span-2 lg:col-span-1">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -62,8 +62,8 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="font-bold text-base sm:text-lg mb-4 sm:mb-6 text-white">Enlaces Rápidos</h3>
-            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
+            <h3 className="font-bold text-base md:text-lg mb-4 md:mb-6 text-white">Enlaces Rápidos</h3>
+            <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
               <li>
                 <a href="#inicio" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2 group">
                   <span className="w-0 h-[1px] bg-blue-400 group-hover:w-2 transition-all duration-300"></span>
@@ -97,8 +97,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-base sm:text-lg mb-4 sm:mb-6 text-white">Servicios</h3>
-            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
+            <h3 className="font-bold text-basemd:text-lg mb-4 md:mb-6 text-white">Servicios</h3>
+            <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
               <li>
                 <span className="text-slate-400 flex items-center gap-2">
                   <CloudSnow className="h-4 w-4 text-blue-400" />
@@ -120,8 +120,8 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-bold text-base sm:text-lg mb-4 sm:mb-6 text-white">Contacto</h3>
-            <ul className="space-y-2 sm:space-y-3 text-sm sm:text-base">
+            <h3 className="font-bold text-base md:text-lg mb-4 md:mb-6 text-white">Contacto</h3>
+            <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-blue-400 mr-3 shrink-0 mt-0.5" />
                 <span className="text-slate-400">Calle 7 entre 45 y 46, La Plata</span>

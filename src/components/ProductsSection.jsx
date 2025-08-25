@@ -107,7 +107,7 @@ export default function ProductsSection() {
 						<span>Nuestras Bolsas de Hielo</span>
 					</div>
 					<h2 className="text-xl sm:text-3xl font-bold mb-2 sm:mb-4">
-						<span className="bg-gradient-to-r from-blue-700 via-cyan-500 to-blue-500 bg-clip-text text-transparent">
+						<span className="bg-gradient-to-r from-blue-600 via-blue-500 to-blue-600 bg-clip-text text-transparent">
 							Elegí el tamaño ideal para tu necesidad
 						</span>
 					</h2>
@@ -160,7 +160,7 @@ export default function ProductsSection() {
 						</div>
 					</div>
 				) : (
-					<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+					<div className="grid grid-cols-1  md:grid-cols-3 gap-8">
 						{productos.map((prod) => (
 							<ProductCard key={prod.nombre} prod={prod} />
 						))}

@@ -91,15 +91,15 @@ export default function Header() {
             exit="exit"
             className="fixed inset-0 bg-white z-50 flex flex-col p-6 lg:hidden"
           >
-            <div className="flex justify-between items-center mb-8">
-              <span className="font-bold text-lg text-blue-600">Menú</span>
+            <div className="flex justify-between items-center mb-4">
+              <span className="font-semibold text-lg text-blue-600">Menú</span>
               <button onClick={() => setIsMenuOpen(false)} className="p-2 rounded-md text-gray-700 hover:bg-gray-100">
                 <X className="h-6 w-6" />
               </button>
             </div>
-            <nav className="flex flex-col gap-8 text-lg">
+            <nav className="flex flex-col">
               {navLinks.map((link) => (
-                <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="font-medium text-gray-800 hover:text-blue-500 transition-colors ">
+                <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="py-3 border-b border-gray-100 text-base  text-gray-800 hover:text-blue-500 transition-colors">
                   {link.text}
                 </a>
               ))}
@@ -107,7 +107,7 @@ export default function Header() {
             <div className="mt-auto flex flex-col gap-4">
               <a
                 href="tel:2214638936"
-                className="w-full text-center font-medium text-gray-900 flex items-center justify-center bg-gray-100 border rounded-md px-4 py-3 border-gray-300 transition-colors hover:text-blue-700"
+                className="w-full text-center  text-gray-900 flex items-center justify-center bg-gray-100 border rounded-md px-4 py-2 border-gray-300 transition-colors hover:text-blue-700"
               >
                 <Phone className="mr-2 h-4 w-4" />
                 <span>Llamar: 221-463-8936</span>
@@ -116,7 +116,7 @@ export default function Header() {
                 href="https://wa.me/5492214638936"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full text-center font-medium flex items-center justify-center bg-gradient-to-r from-blue-600 to-cyan-500 rounded-md px-4 py-3 text-white shadow-lg"
+                className="w-full text-center  flex items-center justify-center bg-gradient-to-r from-blue-600 to-cyan-500 rounded-md px-4 py-2 text-white shadow-lg"
               >
                 <MessageCircle className="mr-2 h-4 w-4"/> Pedir Ahora por WhatsApp
               </a>

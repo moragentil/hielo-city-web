@@ -24,7 +24,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 mx-6 sm:mx-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-10 mx-6 sm:mx-0">
           {/* Servicio para Eventos */}
           <div className="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-xl border border-white/20 shadow-xl shadow-blue-900/20 relative overflow-hidden group transition-all duration-300 hover:-translate-y-1 flex flex-col h-full justify-between">
             <div>

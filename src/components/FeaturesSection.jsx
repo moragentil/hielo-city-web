@@ -1,13 +1,13 @@
 "use client"
 
-import { Truck, Droplets, ThermometerSnowflake } from "lucide-react"
+import { Clock, Droplets, ThermometerSnowflake } from "lucide-react"
 import { motion } from "framer-motion"
 
 const features = [
   {
-    icon: Truck,
-    title: "Entrega Rápida",
-    description: "Servicio express en La Plata y alrededores. Tu pedido llega en menos de 2 horas, siempre a la temperatura ideal.",
+    icon: Clock,
+    title: "Disponibilidad Alta",
+    description: "Atención de Lunes a Sábados de 8 a 00 hs. Domingos sólo con pedidos programados con anticipación",
   },
   {
     icon: Droplets,
@@ -16,8 +16,8 @@ const features = [
   },
   {
     icon: ThermometerSnowflake,
-    title: "Siempre Congelado",
-    description: "Disponibles todos los días para emergencias y eventos. Nuestro hielo mantiene la temperatura por más tiempo.",
+    title: "Máxima Duración",
+    description: "Nuestro hielo se derrite más lento, manteniendo tus bebidas frías por más tiempo sin aguarlas.",
   },
 ]
 
