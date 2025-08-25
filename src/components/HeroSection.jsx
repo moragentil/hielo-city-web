@@ -107,7 +107,7 @@ export default function HeroSection() {
                 href="https://wa.me/5492214638936"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex text-white items-center px-3 py-2 rounded-md font-medium bg-gradient-to-r from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 shadow-lg shadow-blue-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group w-fit"
+                className="flex text-white items-center px-3 py-2 rounded-md font-medium bg-gradient-to-r from-blue-600 to-blue-400 hover:from-blue-700 hover:to-blue-600 shadow-lg shadow-blue-500/20 transition-all duration-300 hover:scale-105 relative overflow-hidden group w-fit"
               >
                 <span className="relative z-10 flex items-center gap-2">
                   <span>Solicitar Presupuesto</span>
