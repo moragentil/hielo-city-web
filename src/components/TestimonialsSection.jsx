@@ -93,7 +93,7 @@ export default function TestimonialSection() {
 	}
 
 	return (
-		<section id="testimonios" className="py-8 sm:py-16 scroll-mt-10 bg-blue-50/40">
+		<section id="testimonios" className="py-12 sm:py-16 scroll-mt-10 bg-blue-50/40">
 			<div className="container mx-auto px-4 sm:px-6">
 				<div className="text-center mb-4 sm:mb-12">
 					<div className="inline-flex px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs sm:text-sm font-medium mb-2 sm:mb-4 items-center gap-2">

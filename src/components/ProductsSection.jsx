@@ -98,7 +98,7 @@ export default function ProductsSection() {
 	return (
 		<section
 			id="productos"
-			className="py-6 sm:py-16 md:py-20 bg-blue-50/70 scroll-mt-10"
+			className="py-12 sm:py-16 md:py-20 bg-blue-50/70 scroll-mt-10"
 		>
 			<div className="container mx-auto px-4 sm:px-6">
 				<div className="text-center mb-4 sm:mb-12">

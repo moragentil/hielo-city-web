@@ -99,7 +99,7 @@ export default function Header() {
             </div>
             <nav className="flex flex-col">
               {navLinks.map((link) => (
-                <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="py-3 border-b border-gray-100 text-base  text-gray-800 hover:text-blue-500 transition-colors">
+                <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="py-4 border-b border-gray-100 text-base  text-gray-800 hover:text-blue-500 transition-colors">
                   {link.text}
                 </a>
               ))}

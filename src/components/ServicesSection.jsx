@@ -2,7 +2,7 @@ import { Snowflake, Sparkles, CloudSnow, CheckCircle } from "lucide-react"
 
 export default function ServicesSection() {
   return (
-    <section id="servicios" className="py-6 sm:py-16 md:py-20  relative overflow-hidden justify-center flex">
+    <section id="servicios" className="py-12 sm:py-16 md:py-20  relative overflow-hidden justify-center flex">
       <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-500 z-0"></div>
       <div className="absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-blue-50 to-transparent z-10"></div>
       <div className="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-blue-50 to-transparent z-10"></div>

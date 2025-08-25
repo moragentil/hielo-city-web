@@ -1,22 +1,8 @@
 import React, { useEffect, useRef } from "react"
 
-const brandFiles = [
-  "byehenry.png",
-  "elcallejon.png",
-  "moro.png",
-  "wildhops.png",
-  "gingerhall.png",
-  "cortez.png",
-  "calleginebra.png",
-  "josue.png",
-  "espai.png",
-  "universitario.PNG",
-  "santa.png",
-  "latasca.png",
-  "modelo.png",
-  "vonharv.png",
-  "lodejorge.png"
-]
+// Use Vite's import.meta.glob to dynamically import all logos
+const logoModules = import.meta.glob('/public/images/logos/*.{png,PNG,jpg,jpeg,svg}', { eager: true, as: 'url' });
+const brandFiles = Object.values(logoModules);
 
 // Función para duplicar las marcas suficiente veces para evitar cortes
 const duplicateBrands = (brands, times = 4) => {
@@ -33,8 +19,8 @@ export default function BrandsCarousel() {
   
   // Dividir las marcas en dos filas
   const half = Math.ceil(brandFiles.length / 2);
-  const brandsRow1 = brandFiles.slice(0, half).map(file => `/images/logos/${file}`);
-  const brandsRow2 = brandFiles.slice(half).map(file => `/images/logos/${file}`);
+  const brandsRow1 = brandFiles.slice(0, half);
+  const brandsRow2 = brandFiles.slice(half);
   
   // Duplicar las marcas para el efecto continuo (4 veces para mayor fluidez)
   const duplicatedBrands1 = duplicateBrands(brandsRow1, 4);

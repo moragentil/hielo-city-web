@@ -1,5 +1,6 @@
 import { motion } from "framer-motion"
 import { Snowflake, Facebook, Instagram, CloudSnow, Droplets, Truck, MapPin, Phone, Mail } from "lucide-react"
+import logoResguar from '/images/logoresguar.svg'
 
 const contactInfo = {
   address: "Calle 22 Nº619 entre 44 y 45, La Plata, Buenos Aires",
@@ -151,7 +152,7 @@ export default function Footer() {
           <a href="https://www.resguarit.com.ar" target="_blank" rel="noopener noreferrer">
             <p className="flex items-center justify-center gap-2 hover:underline">
             <img
-              src="/images/logoresguar.svg"
+              src={logoResguar}
               alt="Logo Resguar IT"
               className="h-5 w-5 inline-block mr-1"
             />
