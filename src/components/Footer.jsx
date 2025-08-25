@@ -1,6 +1,16 @@
 import { motion } from "framer-motion"
 import { Snowflake, Facebook, Instagram, CloudSnow, Droplets, Truck, MapPin, Phone, Mail } from "lucide-react"
 
+const contactInfo = {
+  address: "Calle 22 Nº619 entre 44 y 45, La Plata, Buenos Aires",
+  phone: "221-463-8936",
+  email: "hielocity@hotmail.com",
+  socials: {
+    facebook: "https://www.facebook.com/frabricadehielo/?locale=es_LA",
+    instagram: "https://www.instagram.com/hielocity/?hl=es",
+  },
+}
+
 export default function Footer() {
   return (
     <footer className="bg-gradient-to-br from-slate-900 to-blue-900 text-white py-8 sm:py-10 relative overflow-hidden flex justify-center">
@@ -44,7 +54,7 @@ export default function Footer() {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://www.facebook.com/frabricadehielo/?locale=es_LA"
+                href={contactInfo.socials.facebook}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-rosa text-white transition-colors"
@@ -52,7 +62,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://www.instagram.com/hielocity/?hl=es"
+                href={contactInfo.socials.instagram}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-rosa text-white transition-colors"
@@ -124,15 +134,15 @@ export default function Footer() {
             <ul className="space-y-2 md:space-y-3 text-sm md:text-base">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-blue-400 mr-3 shrink-0 mt-0.5" />
-                <span className="text-slate-400">Calle 7 entre 45 y 46, La Plata</span>
+                <span className="text-slate-400">{contactInfo.address}</span>
               </li>
               <li className="flex items-start">
                 <Phone className="h-5 w-5 text-blue-400 mr-3 shrink-0 mt-0.5" />
-                <span className="text-slate-400">221-555-1234</span>
+                <span className="text-slate-400">{contactInfo.phone}</span>
               </li>
               <li className="flex items-start">
                 <Mail className="h-5 w-5 text-blue-400 mr-3 shrink-0 mt-0.5" />
-                <span className="text-slate-400">info@hielocity.com.ar</span>
+                <span className="text-slate-400">{contactInfo.email}</span>
               </li>
             </ul>
           </div>
