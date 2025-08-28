@@ -46,7 +46,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="inicio" className="relative mt-16 scroll-mt-20 py-20 md:py-16  bg-gradient-to-r from-blue-900/80 to-blue-500/60">
+    <section id="inicio" className="relative mt-8 scroll-mt-20 py-20 md:py-16  bg-gradient-to-r from-blue-900/80 to-blue-500/60">
       <div className=" mx-auto px-6 md:px-16 ">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between  lg:gap-12">
           {/* Textos y botones */}
@@ -70,14 +70,14 @@ export default function HeroSection() {
             </motion.div>
             <motion.h1
               variants={iceTextAnimation}
-              className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl "
+              className=" font-bold tracking-tighter text-6xl "
             >
               <div className="flex gap-1 md:gap-4">
                 <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">Hielo </span>
                 <span className="block text-rosa">City</span> {/* Rosa para la marca */}
               </div>
-              <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">La Mayor Distribuidora</span>
-              <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">de Hielo en La Plata</span>
+              <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">Fábrica de Hielo</span>
+              <span className="block bg-gradient-to-r from-white via-blue-100 to-white bg-clip-text text-transparent drop-shadow-[0_5px_5px_rgba(148,216,255,0.1)]">en La Plata</span>
             </motion.h1>
             <motion.p
               variants={{
@@ -90,7 +90,7 @@ export default function HeroSection() {
               }}
               className="text-lg md:text-xl text-blue-100"
             >
-              Suministramos hielo de la más alta calidad para eventos, negocios y hogares. Entrega rápida y servicio confiable.
+              Fabricamos y distribuimos hielo de la más alta calidad para eventos, negocios y hogares. Servicio confiable y atención personalizada.
             </motion.p>
             <motion.div
               variants={{

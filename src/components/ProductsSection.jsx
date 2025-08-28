@@ -5,41 +5,44 @@ import { motion, AnimatePresence } from "framer-motion"
 const numeroWsp = "5492214638936"
 
 const productos = [
-	{
-		nombre: "Bolsa de Hielo 4kg",
-		descripcion:
-			"Ideal para reuniones pequeñas y uso doméstico. Hielo cristalino y de larga duración.",
-		badge: { texto: "Práctico", color: "bg-rosa" },
-		mensaje: "Hola! Quisiera consultar el precio de la Bolsa de Hielo 4kg.",
-	},
-	{
-		nombre: "Bolsa de Hielo 10kg",
-		descripcion:
-			"Perfecta para fiestas, bares y eventos medianos. Mantiene tus bebidas frías por más tiempo.",
-		badge: { texto: "Más Vendido", color: "bg-rosa" },
-		mensaje: "Hola! Quisiera consultar el precio de la Bolsa de Hielo 10kg.",
-	},
-	{
-		nombre: "Bolsa de Hielo 15kg",
-		descripcion:
-			"La mejor opción para grandes eventos y negocios. Gran capacidad y duración.",
-		badge: { texto: "Mayor Capacidad", color: "bg-rosa" },
-		mensaje: "Hola! Quisiera consultar el precio de la Bolsa de Hielo 15kg.",
-	},
+    {
+        nombre: "Hielo en Rolo - 2kg",
+        descripcion: "Perfecta para conservadoras pequeñas y uso personal. Práctica y fácil de transportar.",
+        badge: { texto: "Uso Personal", color: "bg-cyan-500" },
+        mensaje: "Hola! Quisiera consultar por la bolsa de hielo en Rolo de 2kg.",
+    },
+    {
+        nombre: "Hielo en Rolo - 4kg",
+        descripcion: "Ideal para reuniones pequeñas y uso doméstico. Hielo cristalino y de larga duración.",
+        badge: { texto: "Práctico", color: "bg-rosa" },
+        mensaje: "Hola! Quisiera consultar por la bolsa de hielo en Rolo de 4kg.",
+    },
+    {
+        nombre: "Hielo en Rolo - 15kg",
+        descripcion: "La mejor opción para grandes eventos y negocios. Máxima capacidad y duración.",
+        badge: { texto: "Más Vendido", color: "bg-rosa" },
+        mensaje: "Hola! Quisiera consultar por la bolsa de hielo en Rolo de 15kg.",
+    },
+    {
+        nombre: "Hielo Triturado - 15kg",
+        descripcion: "Ideal para coctelería, frappés y exhibición de productos. Enfría rápidamente.",
+        badge: { texto: "Coctelería", color: "bg-blue-500" },
+        mensaje: "Hola! Quisiera consultar por la bolsa de hielo Triturado de 15kg.",
+    },
 ]
 
 const useMediaQuery = (query) => {
-	const [matches, setMatches] = useState(false)
-	useEffect(() => {
-		const media = window.matchMedia(query)
-		if (media.matches !== matches) {
-			setMatches(media.matches)
-		}
-		const listener = () => setMatches(media.matches)
-		window.addEventListener("resize", listener)
-		return () => window.removeEventListener("resize", listener)
-	}, [matches, query])
-	return matches
+    const [matches, setMatches] = useState(false)
+    useEffect(() => {
+        const media = window.matchMedia(query)
+        if (media.matches !== matches) {
+            setMatches(media.matches)
+        }
+        const listener = () => setMatches(media.matches)
+        window.addEventListener("resize", listener)
+        return () => window.removeEventListener("resize", listener)
+    }, [matches, query])
+    return matches
 }
 
 const ProductCard = ({ prod }) => (
@@ -160,12 +163,12 @@ export default function ProductsSection() {
 						</div>
 					</div>
 				) : (
-					<div className="grid grid-cols-1  md:grid-cols-3 gap-8">
-						{productos.map((prod) => (
-							<ProductCard key={prod.nombre} prod={prod} />
-						))}
-					</div>
-				)}
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {productos.map((prod) => (
+                            <ProductCard key={prod.nombre} prod={prod} />
+                        ))}
+                    </div>
+                )}
 			</div>
 		</section>
 	)
