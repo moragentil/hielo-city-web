@@ -46,7 +46,7 @@ export default function HeroSection() {
   }
 
   return (
-    <section id="inicio" className="relative mt-8 scroll-mt-20 py-20 md:py-16  bg-gradient-to-r from-blue-900/80 to-blue-500/60">
+    <section id="inicio" className="relative mt-18 scroll-mt-20 py-20 md:py-16  bg-gradient-to-r from-blue-900/80 to-blue-500/60">
       <div className=" mx-auto px-6 md:px-16 ">
         <div className="flex flex-col-reverse md:flex-row items-center justify-between  lg:gap-12">
           {/* Textos y botones */}
